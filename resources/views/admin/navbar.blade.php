@@ -1,17 +1,16 @@
-  <!-- partial -->
-  <div class="container-fluid page-body-wrapper">
+<div class="container-fluid page-body-wrapper">
     <!-- partial:partials/_navbar.html -->
-    <nav class="flex-row p-0 navbar fixed-top d-flex">
+    <nav class="navbar p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
       </div>
-      <div class="flex-grow navbar-menu-wrapper d-flex align-items-stretch">
-        <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
+      <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-menu"></span>
         </button>
         <ul class="navbar-nav w-100">
           <li class="nav-item w-100">
-            <form class="mt-2 nav-link mt-md-0 d-none d-lg-flex search">
+            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
               <input type="text" class="form-control" placeholder="Search products">
             </form>
           </li>
@@ -29,7 +28,7 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">Software Development</p>
+                  <p class="preview-subject ellipsis mb-1">Software Development</p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -40,7 +39,7 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">UI Development</p>
+                  <p class="preview-subject ellipsis mb-1">UI Development</p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -51,7 +50,7 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">Software Testing</p>
+                  <p class="preview-subject ellipsis mb-1">Software Testing</p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -76,8 +75,8 @@
                   <img src="assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">Mark send you a message</p>
-                  <p class="mb-0 text-muted"> 1 Minutes ago </p>
+                  <p class="preview-subject ellipsis mb-1">Mark send you a message</p>
+                  <p class="text-muted mb-0"> 1 Minutes ago </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -86,8 +85,8 @@
                   <img src="assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">Cregh send you a message</p>
-                  <p class="mb-0 text-muted"> 15 Minutes ago </p>
+                  <p class="preview-subject ellipsis mb-1">Cregh send you a message</p>
+                  <p class="text-muted mb-0"> 15 Minutes ago </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -96,8 +95,8 @@
                   <img src="assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject ellipsis">Profile picture updated</p>
-                  <p class="mb-0 text-muted"> 18 Minutes ago </p>
+                  <p class="preview-subject ellipsis mb-1">Profile picture updated</p>
+                  <p class="text-muted mb-0"> 18 Minutes ago </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -119,8 +118,8 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject">Event today</p>
-                  <p class="mb-0 text-muted ellipsis"> Just a reminder that you have an event today </p>
+                  <p class="preview-subject mb-1">Event today</p>
+                  <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -131,8 +130,8 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject">Settings</p>
-                  <p class="mb-0 text-muted ellipsis"> Update dashboard </p>
+                  <p class="preview-subject mb-1">Settings</p>
+                  <p class="text-muted ellipsis mb-0"> Update dashboard </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
@@ -143,24 +142,21 @@
                   </div>
                 </div>
                 <div class="preview-item-content">
-                  <p class="mb-1 preview-subject">Launch Admin</p>
-                  <p class="mb-0 text-muted ellipsis"> New admin wow! </p>
+                  <p class="preview-subject mb-1">Launch Admin</p>
+                  <p class="text-muted ellipsis mb-0"> New admin wow! </p>
                 </div>
               </a>
               <div class="dropdown-divider"></div>
               <p class="p-3 mb-0 text-center">See all notifications</p>
             </div>
           </li>
-
-
           <x-app-layout>
-            <h1>This is Admin Dashboard</h1>
-          </x-app-layout>
-
-
+           
+        </x-app-layout>
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="mdi mdi-format-line-spacing"></span>
         </button>
       </div>
+
     </nav>
