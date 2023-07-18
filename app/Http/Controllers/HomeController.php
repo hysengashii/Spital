@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Doctor;
 
 // uuse App\Models\User;
 
@@ -40,5 +41,29 @@ class HomeController extends Controller
         $doctor = Doctor::all();
         return view('user.home',compact('doctor'));
     }
+    }
+
+    public function appointment(Request $request)
+    {
+        $data = new Appointment;
+
+        // $data->phone kjo eshte ne databaze;   $request->number; kjo eshte ne form
+        $data->name=$request->name;
+        $data->email=$request->email;
+        $data->date=$request->date;
+        $data->phone=$request->number;
+        $data->message=$request->message;
+        $data->doctor=$request->doctor;
+        $data->status='In progress';
+
+        if(Auth::id())
+        {
+        $data->user_id=Auth::user()->id;
+        }
+
+        $data->save();
+
+        return redirect()->back()->with('message','Appoinment Request Successfull . We will contact with you soon');
+
     }
 }
