@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Models\Doctor;
 
@@ -21,7 +22,6 @@ class AdminController extends Controller
         $request->file->move('doctorimage', $imagename);
         $doctor->image=$imagename;
 
-
         $doctor->name=$request->name;
         $doctor->phone=$request->number;
         $doctor->room=$request->room;
@@ -30,5 +30,34 @@ class AdminController extends Controller
         $doctor->save();
 
         return redirect()->back()->with('message','Doctor Added Succesfuly');
+    }
+
+    public function showappointment(){
+
+        $data=Appointment::all();
+
+        return view('admin.showappointment',compact('data'));
+    }
+
+    public function approved($id){
+
+        $data=Appointment::find($id);
+        $data->status='Approved';
+
+        $data->save();
+
+        return redirect()->back();
+    }
+
+
+
+    public function canceled($id){
+
+        $data=Appointment::find($id);
+        $data->status='Canceled';
+
+        $data->save();
+
+        return redirect()->back();
     }
 }
