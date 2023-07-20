@@ -5,6 +5,9 @@
 <!-- plugins:css -->
 <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
+
+<link rel="stylesheet" href="style.css">
+
 <!-- endinject -->
 <!-- Plugin css for this page -->
 <link rel="stylesheet" href="admin/assets/vendors/jvectormap/jquery-jvectormap.css">
