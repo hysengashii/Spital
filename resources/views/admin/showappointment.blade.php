@@ -5,7 +5,7 @@
       </head>
   <body>
     <div class="container-scroller">
-      <div class="row p-0 m-0 proBanner" id="proBanner">
+      <div class="p-0 m-0 row proBanner" id="proBanner">
 
       </div>
       <!-- partial:partials/_sidebar.html -->
@@ -29,6 +29,7 @@
                     <th style="padding: 10px">Status</th>
                     <th style="padding: 10px">Approved</th>
                     <th style="padding: 10px">Canceled</th>
+                    <th style="padding: 10px">Send Mail</th>
                 </tr>
 
                 @foreach ($data as $appoint)
@@ -49,8 +50,12 @@
                     <td>
                         <a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Canceled</a>
                     </td>
+
+                    <td>
+                        <a class="btn btn-primary" href="{{url('emailview',$appoint->id)}}">Send Mail</a>
+                    </td>
                 </tr>
-                
+
                 @endforeach
             </table>
         </div>
